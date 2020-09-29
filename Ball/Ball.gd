@@ -10,15 +10,11 @@ func _ready():
 	set_max_contacts_reported(4)
 	update_color()
 
-
 func update_color():
 	if HUD.color_ball:
-		pass
+		$Color.color = Color8(34,184,207)
 	else:
-		pass
-
-
-
+		$Color.color = Color(1,1,1,1)
 
 func _on_HUD_changed():
 	update_color()
